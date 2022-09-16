@@ -90,9 +90,12 @@ const time = setInterval(() => {
                         b.status = 0;
                         score++;
                         if(score == brickColumnCount*brickRowCount){
-                            alert("Félicitation. Vous avez gagné !");
-                            document.location.reload();
-                            clearInterval(interval);
+                            win();
+                            clearInterval(interval)
+                            document.addEventListener('keypress', (e) => {
+                            if(e.key == "enter" || e.key == "Enter"){
+                                 document.location.reload();
+                            }
                         }
                     }
                 }
