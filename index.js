@@ -92,13 +92,13 @@ const time = setInterval(() => {
                         if(score == brickColumnCount*brickRowCount){
                             win();
                             clearInterval(interval)
-                            
+                        
                             document.addEventListener('keypress', (e) => {
                             if(e.key == "enter" || e.key == "Enter"){
                                  document.location.reload();
                             }
                           }
-                        )}
+                            )}
                     }
                 }
             }
