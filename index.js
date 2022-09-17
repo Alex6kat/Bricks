@@ -98,7 +98,7 @@ const time = setInterval(() => {
                                  document.location.reload();
                             }
                           }
-                        }
+                        )}
                     }
                 }
             }
